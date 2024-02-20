@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snapchat login page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <header class="form-header">
+          <div class="icon-box">
+            <ion-icon name="notifications-outline" class="icon"></ion-icon>
+          </div>
+        </header>
+        <div class="container--inner">
+          <p class="label-welcome">Welcome Back!</p>
+          <button class="btn btn--google">Log In via Google</button>
+          <a href="#" class="label-help">Trouble logging in?</a>
+          <p class="label-alternative">or</p>
+          <form action="" class="form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                id="email"
+                name="email"
+                placeholder="username or email"
+                required
+              />
+              <label for="email" class="form-label">username or email</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-input"
+                id="password"
+                name="password"
+                placeholder="password"
+                required
+              />
+              <label for="password" class="form-label">password</label>
+              <a href="#" class="form-link">Forgot password?</a>
+            </div>
+            <button class="btn btn--submit">Log In</button>
+          </form>
+          <p class="label-signup">
+            <a href="#" class="signup-link">Sign Up</a> if you don't have an
+            account
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

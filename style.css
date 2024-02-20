@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 300px;
+  margin: 32px auto;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  padding-bottom: 72px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: ; */
+}
+
+.container--inner {
+  padding: 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  position: relative;
+}
+
+.form-input {
+  color: #555;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  font-size: 16px;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  padding: 2px 0;
+}
+
+.form-input::placeholder,
+.form-label {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 12px;
+}
+
+.form-label {
+  position: absolute;
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.form-header {
+  background-color: #f5f11a;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.form-link,
+.signup-link {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1098ad;
+  align-self: flex-end;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1098ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+}
+
+.label-welcome {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  width: 200px;
+  padding: 8px 0;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.btn--google {
+  background-color: #222;
+  color: #f5f11a;
+  margin-bottom: 18px;
+}
+
+.btn--submit {
+  background-color: #bbb;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.label-help {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.label-alternative {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  display: block;
+}
+
+.label-signup {
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+}
